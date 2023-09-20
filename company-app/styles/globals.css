@@ -32,6 +32,9 @@ background-size: cover;
 height: 700px;
 position: 'relative',
 }
+
+
+
 .text {
   position: absolute;
   top: 50%;
@@ -41,12 +44,73 @@ position: 'relative',
   color: white;
 }
 .texth1 {
-  font-size: 2rem; /* You can adjust the value to make it larger */
+  /* font-size: 2rem; You can adjust the value to make it larger */
+  color: #fdfdfd;
+  /* font-family: Open Sans; */
+  font-size: 30px;
+  font-weight: 700;
+  /* line-height: 60px; */
+  font-variant-ligatures: common-ligatures;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    /* margin-block-start: 1.33em;
+    margin-block-end: 1.33em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .textp {
-  font-size: 4rem; /* You can adjust the value to make it larger */
-  font-weight: 600;
+  color: #fdfdfd;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 55px;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+
+  font-family: 'Raleway', sans-serif;
+  font-variant-ligatures: common-ligatures;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .textp {
+    width: 91%;
+  }
 }
 
+.button{
+  background-color: #fcc236;
+ color: white;
 
+}
+
+.slider__btn {
+  margin-top: 40px;
+}
+.htc__btn {
+  background: #fcc236 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 25px;
+  transition: 0.5s;
+  border: 1px solid #fcc236;
+}
+
+.p2{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 23px auto auto;
+  width: 57%;
+  font-family: 'Raleway';
+  /* color: #606060; */
+  font-weight: 400;
+  /* font-size: 14px; */
+  line-height: 24px;
+}

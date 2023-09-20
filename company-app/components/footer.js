@@ -24,68 +24,108 @@ function Footer() {
   };
 
   return (
+    <>
     <div className="relative">
       <div style={overlayStyle}></div> {/* Overlay for the background image */}
       <div className="flex flex-col items-start justify-around w-full p-20 bg-white h-1/2 md:flex-row" style={footerStyle}>
         {/* MRCC Section */}
-        <div className="p-5" style={{zIndex: 2}}>
+        <div className="p-5" style={{ zIndex: 2 }}>
           <ul>
             <p className="pb-6 text-3xl font-bold text-white-800">
               <span className="text-white">MRCC</span>
             </p>
             <div className="flex gap-6 pb-5" >
-              <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" style={{ color: 'white' }}/>
-              <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" style={{ color: 'white' }}/>
-              <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600"style={{ color: 'white' }} />
-              <FaYoutube className="text-2xl cursor-pointer hover:text-red-600"style={{ color: 'white' }} />
+              <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" style={{ color: 'white' }} />
+              <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" style={{ color: 'white' }} />
+              <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" style={{ color: 'white' }} />
+              <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" style={{ color: 'white' }} />
             </div>
           </ul>
         </div>
 
         {/* Quick Links Section */}
-        <div className="p-5" style={{zIndex: 2}}>
+        <div className="p-5" style={{ zIndex: 2 }}>
           <ul>
             <p className="pb-4 text-2xl font-bold text-white">Quick Links</p>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               <Link href='/#about'>About</Link>
             </li>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               <Link href='/project'>Project</Link>
             </li>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               <Link href='/resources'>Resources</Link>
             </li>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               <Link href='/contact'>Contact</Link>
             </li>
           </ul>
         </div>
 
+        <div className="p-5 " style={{ zIndex: 2, width: '20%' }}>
+        <p className="pb-4 text-2xl font-bold text-white">Galary</p>
+          <div className="grid grid-cols-3 gap-4">
+          <img
+            className="" style={{}}
+            src="https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669"
+            alt="Image 1"
+          />
+          <img
+            className=""
+            src="https://images-ext-2.discordapp.net/external/Q_TFI_G4qC-QWvLx92FsfdEskzdEm6nxmJnzLLfaHHw/https/img.freepik.com/free-photo/new-road-is-construction-with-several-pieces-heavy-equipment_587448-4806.jpg?width=860&height=376"
+            alt="Image 2"
+          />
+          <img
+            className=""
+            src="https://images-ext-1.discordapp.net/external/Nc8cgjDkwsYO9NY2RWBL269f2_Nv9QEiDfws6tK2xIc/%3Fw%3D826%26t%3Dst%3D1695224400~exp%3D1695225000~hmac%3D7481f8e6af9e3e7760857d9c77e0d95a0db7cad0d7717fd7e224d0ed5989c209/https/img.freepik.com/free-photo/construction-site-with-cranes-against-blue-sky_1127-2304.jpg?width=840&height=669"
+            alt="Image 3"
+          />
+          <img
+            className=""
+            src="https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669"
+            alt="Image 4"
+          />
+          <img
+            className=""
+            src="https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669"
+            alt="Image 5"
+          />
+          <img
+            className=""
+            src="https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669"
+            alt="Image 6"
+          />
+          </div>
+        </div>
+
+
         {/* Contact Info Section */}
-        <div className="p-5" style={{zIndex: 2}}>
+        <div className="p-5" style={{ zIndex: 2 }}>
           <ul>
             <p className="pb-4 text-2xl font-bold text-white">Contact Info</p>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               Riyadh, Saudi Arabia
             </li>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               Phone: 011-244-8491
             </li>
-            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-orange-300">
               Email: AARS1@HOTMAIL.COM
             </li>
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center p-5 text-center bg-gray-800" style={{zIndex: 2}}>
-        <h1 className="font-semibold text-white">
-          © 2023 All rights reserved | Build by{" "}
-          <span className="font-semibold cursor-pointer hover:text-blue-600">
-            BS Team
-          </span>
-        </h1>
-      </div>
+      
     </div>
+    <div className="flex flex-col items-center justify-center p-5 text-center " style={{ zIndex: 1,backgroundColor:'#fcc236'}}>
+    <h1 className="font-semibold text-white">
+      © 2023 All rights reserved | Build by{" "}
+      <span className="font-semibold cursor-pointer hover:text-black">
+        BS Team
+      </span>
+    </h1>
+  </div>
+</>
   );
 }
 

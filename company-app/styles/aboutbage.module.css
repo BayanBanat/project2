@@ -1,0 +1,33 @@
+.aboutbackground {
+    background-image: url('https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669');
+    background-size: cover;
+    height: 650px;
+    position: 'relative',
+}
+
+.weare {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    /* text-align: center; */
+    /* background-color: rgb(248, 243, 243); */
+}
+
+.imgabout {
+    width: 90%;
+}
+
+.divabouttext {
+
+    margin: 50px;
+    width: 40%;
+}
+
+.divaboutimg {
+    margin: 40px;
+    width: 60%;
+}
+.text{
+    font-size: 1.5rem ;
+    font-family: 'Raleway';
+}

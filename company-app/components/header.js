@@ -27,34 +27,37 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+      className='fixed top-0 left-0 z-10 w-full duration-300 ease-in'
     >
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
-          <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
+          <h1 style={{ color: `${textColor}` }} className='text-4xl font-bold'>
           MRCC
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4'>
+          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
             <Link href='/'>Home</Link>
           </li>
-          <li className='p-4'>
-            <Link href='/#about'>About</Link>
+          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+            <Link href='/about'>About</Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+            <Link href='/بروفايل شركة ضخور المدينه للمقاولات.pdf'>Company Profile</Link>
+          </li>
+          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
             <Link href='/project'>project</Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
             <Link href='/resources'>resources</Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className='block sm:hidden z-10'>
+        <div onClick={handleNav} className='z-10 block sm:hidden'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (
