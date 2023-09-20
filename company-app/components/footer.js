@@ -6,86 +6,87 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
-	return (
-		<>
-			<div className="bg-black-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
-				<div className="p-5 ">
-					<ul>
-						<p className="text-white-800 font-bold text-3xl pb-6">
-							<span className="text-blue-600">MRCC</span>
-						</p>
-						<div className="flex gap-6 pb-5" >
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-							<FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
-						</div>
-					</ul>
-				</div>
-				<div className="p-5">
-					<ul>
-						<p className="text-white-800 font-bold text-2xl pb-4">Quick Links</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-						<Link href='/#about'>About</Link>
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-						<Link href='/project'>project</Link>
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-						<Link href='/resources'>resources</Link>
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-						<Link href='/contact'>Contact</Link>
-						</li>
-					</ul>
-				</div>
-				<div className="p-5">
-					<ul>
-						<p className="text-white-600 font-bold text-2xl pb-4">Contact Info</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							
-							Riyadh, Saudi Arabia
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-						Phone: 011-244-8491 
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Email: AARS1@HOTMAIL.COM
-						</li>
-					</ul>
-				</div>
+  const footerStyle = {
+    // Add your background image here
+    backgroundImage: `url('https://images-ext-1.discordapp.net/external/0gJ9S2_6gWm0kynQif-SlfOQnIpafnQZRH5JBC5_dfY/%3Fsize%3D626%26ext%3Djpg/https/img.freepik.com/free-photo/complex-aerial-view-city_23-2148975284.jpg?width=860&height=573')`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
+  const overlayStyle = {
+    position: 'absolute',
+    zIndex: 1,
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    background: 'rgba(0, 0, 0, 0.8)', // Adjust the alpha value for the desired opacity
+    pointerEvents: 'none', // Allow clicks to go through the overlay
+  };
 
-				{/* <div className="p-5">
-					<ul>
-						<p className="text-white-400 font-bold text-2xl pb-4">Support</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Contact
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Support Portals
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							List Of Charges
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Downloads & Resources
-						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-							Videos
-						</li>
-					</ul>
-				</div> */}
-			</div>
-			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-500">
-				<h1 className=" text-white-800 font-semibold">
-					© 2023 All rights reserved | Build by{" "}
-					<span className="hover:text-blue-600 font-semibold cursor-pointer">
-						BS Team
-					</span>
-				</h1>
-			</div>
-		</>
-	);
+  return (
+    <div className="relative">
+      <div style={overlayStyle}></div> {/* Overlay for the background image */}
+      <div className="flex flex-col items-start justify-around w-full p-20 bg-white h-1/2 md:flex-row" style={footerStyle}>
+        {/* MRCC Section */}
+        <div className="p-5" style={{zIndex: 2}}>
+          <ul>
+            <p className="pb-6 text-3xl font-bold text-white-800">
+              <span className="text-white">MRCC</span>
+            </p>
+            <div className="flex gap-6 pb-5" >
+              <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" style={{ color: 'white' }}/>
+              <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" style={{ color: 'white' }}/>
+              <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600"style={{ color: 'white' }} />
+              <FaYoutube className="text-2xl cursor-pointer hover:text-red-600"style={{ color: 'white' }} />
+            </div>
+          </ul>
+        </div>
+
+        {/* Quick Links Section */}
+        <div className="p-5" style={{zIndex: 2}}>
+          <ul>
+            <p className="pb-4 text-2xl font-bold text-white">Quick Links</p>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              <Link href='/#about'>About</Link>
+            </li>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              <Link href='/project'>Project</Link>
+            </li>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              <Link href='/resources'>Resources</Link>
+            </li>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              <Link href='/contact'>Contact</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact Info Section */}
+        <div className="p-5" style={{zIndex: 2}}>
+          <ul>
+            <p className="pb-4 text-2xl font-bold text-white">Contact Info</p>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              Riyadh, Saudi Arabia
+            </li>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              Phone: 011-244-8491
+            </li>
+            <li className="pb-2 font-semibold text-white cursor-pointer text-md hover:text-blue-600">
+              Email: AARS1@HOTMAIL.COM
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center p-5 text-center bg-gray-800" style={{zIndex: 2}}>
+        <h1 className="font-semibold text-white">
+          © 2023 All rights reserved | Build by{" "}
+          <span className="font-semibold cursor-pointer hover:text-blue-600">
+            BS Team
+          </span>
+        </h1>
+      </div>
+    </div>
+  );
 }
 
 export default Footer;
