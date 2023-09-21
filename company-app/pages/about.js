@@ -45,7 +45,7 @@ const About = () => {
                     </div>
                     <p className={styles.title}>OVERVIEW</p>
                 </div>
-                <section className={styles.weare}>
+                <section className={`${styles.weare} row`} >
                     <div className={styles.containertext}>
                         <div className={styles.divabouttext}>
                             <p className={styles.title}>WHO WE ARE</p>
@@ -55,7 +55,7 @@ const About = () => {
                             </p>
 
                         </div>
-                        <div></div>
+            
                         <br></br>
 
                         <div className={styles.divabouttext} >
