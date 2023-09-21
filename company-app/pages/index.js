@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '@/components/footer';
 import Navbar from '@/components/header';
 import AboutPage from '@/components/services';
+import ClientPage2 from '@/components/services2';
 
 const Home = () => {
   const overlayStyle = {
@@ -32,6 +33,9 @@ const Home = () => {
         </section>
         <section>
           <AboutPage />
+        </section>
+        <section>
+          <ClientPage2 />
         </section>
       </main>
 

@@ -26,14 +26,25 @@ const About = () => {
                     <div className={styles.textABOUT} >
                         {/* <h3 className='texth1'>WHO WE ARE</h3> */}
                         <h1 className={styles.textpABOUT}>WHO WE ARE</h1>
-                        {/* <p className='p2'>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p> */}
-                        {/* <div class="slider__btn">
-                            <a class="htc__btn" href="/about">CONTACT US</a>
-                        </div> */}
+
                     </div>
                 </section>
 
-
+                <div className={styles.containerorganization}>
+                    <div className={styles.iconContainer}>
+                        <div class="elementor-widget-container">
+                            <div class="elementor-icon-wrapper">
+                                <div class="elementor-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 21 8" fill="none">
+                                        <path d="M7 0H13L6 8H0L7 0Z" fill="#FCC236"></path>
+                                        <path d="M13 0H7L15 8H21L13 0Z" fill="#FCC236"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p className={styles.title}>OVERVIEW</p>
+                </div>
                 <section className={styles.weare}>
                     <div className={styles.containertext}>
                         <div className={styles.divabouttext}>
@@ -70,45 +81,51 @@ const About = () => {
                 </section>
 
 
+
+
                 <section className="htc__offer__area ptb--150 bg__white">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4 col-xl-4 col-md-6 col-12">
-            <div className="offer">
-              <div className="offer__icon">
-                <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/1.png" alt="icon images" />
-              </div>
-              <div className="offer__details">
-                <h2><a href="#">TOP RATED</a></h2>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-xl-4 col-md-6 col-12 xmt-40">
-            <div className="offer separator">
-              <div className="offer__icon">
-                <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/2.png" alt="icon images" />
-              </div>
-              <div className="offer__details">
-                <h2><a href="#">BEST QUALITY</a></h2>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-xl-4 col-md-6 col-12 smt-40 xmt-40">
-            <div className="offer separator">
-              <div className="offer__icon">
-                <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/3.png" alt="icon images" />
-              </div>
-              <div className="offer__details">
-                <h2><a href="#">LOW COST</a></h2>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-3 col-md-3 col-sm-6 separator">
+                                <div className="offer">
+                                    <div className="offer__icon">
+                                        <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/1.png" alt="icon images" />
+                                    </div>
+                                    <div className="offer__details">
+                                        <h2><a href="#">TOP RATED</a></h2>
+                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-3 col-sm-6 separator">
+                                <div className="offer">
+                                    <div className="offer__icon">
+                                        <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/2.png" alt="icon images" />
+                                    </div>
+                                    <div className="offer__details">
+                                        <h2><a href="#">BEST QUALITY</a></h2>
+                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-3 col-sm-6">
+                                <div className="offer">
+                                    <div className="offer__icon">
+                                        <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/3.png" alt="icon images" />
+                                    </div>
+                                    <div className="offer__details">
+                                        <h2><a href="#">LOW COST</a></h2>
+                                        <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
 
 
 
