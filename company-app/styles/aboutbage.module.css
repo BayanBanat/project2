@@ -1,33 +1,114 @@
 .aboutbackground {
-    background-image: url('https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669');
+    background-image: url('https://images-ext-2.discordapp.net/external/Q_TFI_G4qC-QWvLx92FsfdEskzdEm6nxmJnzLLfaHHw/https/img.freepik.com/free-photo/new-road-is-construction-with-several-pieces-heavy-equipment_587448-4806.jpg?width=860&height=376');
     background-size: cover;
-    height: 650px;
+    height: 500px;
     position: 'relative',
 }
+.weare1{
+    background-image: url('https://images-ext-1.discordapp.net/external/ektm-aHLm-JyuwVprlaZLQuQIn7TuMtchRcDkjTrXcU/%3Fw%3D996%26t%3Dst%3D1695240984~exp%3D1695241584~hmac%3Da111e70b7bb926499385dff1daf5831f840e5e59b94b26a6c970d0e930d7b8d9/https/img.freepik.com/free-photo/close-up-construction-site-excavator_1112-1223.jpg?width=1040&height=669');
+    background-size: cover;
+    height: 500px;
 
+}
+.textABOUT{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(241, 235, 235);
+}
+.textpABOUT{
+    color: #fdfdfd;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+  
+    font-family: 'Raleway', sans-serif;
+    font-variant-ligatures: common-ligatures;
+    margin-bottom: 0;
+}
+.title{
+    color: #fcc236;
+    font-size: 25px;
+    font-weight: 600;
+    /* line-height: 55px; */
+  
+    font-family: 'Raleway', sans-serif;
+    font-variant-ligatures: common-ligatures;
+}
 .weare {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 40px;
-    /* text-align: center; */
-    /* background-color: rgb(248, 243, 243); */
+    background: #fafafa;
+
 }
 
 .imgabout {
-    width: 90%;
+    width: 100%;
 }
 
-.divabouttext {
 
-    margin: 50px;
+.containertext{
+    display: flex;
+    flex-direction: column;
     width: 40%;
+    margin: 50px;
+
+
 }
 
 .divaboutimg {
-    margin: 40px;
-    width: 60%;
+    width: 50%;
 }
 .text{
-    font-size: 1.5rem ;
+    font-size: 1rem ;
     font-family: 'Raleway';
 }
+.divorganization {
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px; */
+    width: 90%;
+    height: 50%; /* Adjust the height as needed */
+  }
+  
+ 
+  
+
+  
+  .imgorganization {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .containerorganization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .iconContainer {
+    /* Add any styling for the icon container here */
+  }
+  
+  .title {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 10px 0; /* Adjust the spacing as needed */
+  }
+  
+
+  
+  .imgorganization {
+    max-width: 100%;
+    max-height: 100%;
+    /* Add any additional styling for the image here */
+  }
+  
+  

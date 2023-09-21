@@ -29,7 +29,7 @@
   
 background-image: url('https://images-ext-2.discordapp.net/external/gk6a5Ize5OjDeBkddl2A6U_32wgYSD-qNfDEZqqpq5k/%3Ft%3Dst%3D1695143385~exp%3D1695143985~hmac%3D574fa67fbb90c41404f4b7bb4f4f4ba1fc034374451f7befb3308e92f7f99a79/https/img.freepik.com/free-photo/construction-works-frankfurt-downtown-germany_1268-20907.jpg?width=1188&height=669');
 background-size: cover;
-height: 700px;
+height: 750px;
 position: 'relative',
 }
 
@@ -37,7 +37,7 @@ position: 'relative',
 
 .text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -78,6 +78,16 @@ position: 'relative',
     width: 91%;
   }
 }
+@media (max-width: 900px) {
+  .text {
+    width: 100%; /* Expand the width to 100% */
+    height: auto;
+  }
+  
+  .slider__btn {
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
 
 .button{
   background-color: #fcc236;
@@ -112,5 +122,152 @@ position: 'relative',
   /* color: #606060; */
   font-weight: 400;
   /* font-size: 14px; */
+  line-height: 24px;
+}
+
+
+.htc__offer__area {
+  position: relative;
+}
+.ptb--150 {
+  padding: 150px 0;
+}
+.bg__white {
+  background: #fff;
+}
+section {
+  display: block;
+}
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.row {
+  --bs-gutter-x: 30px;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.container .row div[class^=col-] {
+  position: relative;
+}
+@media (min-width: 1200px)
+.col-xl-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+@media (min-width: 992px)
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+@media (min-width: 768px)
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.offer {
+  display: flex;
+}
+.offer__icon {
+  margin-right: 18px;
+}
+.offer__icon img {
+  max-width: 47px;
+}
+p + img, img:last-child {
+  margin-bottom: 0;
+}
+img, .img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+img, svg {
+  vertical-align: middle;
+}
+.offer__details h2 {
+  color: #1f2d30;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.offer__details p {
+  color: #606060;
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 29px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #606060;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
 }

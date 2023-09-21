@@ -36,22 +36,22 @@ const Navbar = () => {
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/'>Home</Link>
           </li>
-          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/about'>About</Link>
           </li>
-          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/بروفايل شركة ضخور المدينه للمقاولات.pdf'>Company Profile</Link>
           </li>
-          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/project'>project</Link>
           </li>
-          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/resources'>resources</Link>
           </li>
-          <li className='p-4' style={{    fontFamily: 'Raleway'}}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>

@@ -9,7 +9,7 @@ const Home = () => {
     top: 0,
     left: 0,
     width: '100%',
-    height: '700px',
+    height: '750px',
     backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the opacity as needed
   };
 

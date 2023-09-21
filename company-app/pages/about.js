@@ -11,7 +11,7 @@ const About = () => {
         top: 0,
         left: 0,
         width: '100%',
-        height: '650px',
+        height: '500px',
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Adjust the opacity as needed
     };
 
@@ -21,29 +21,44 @@ const About = () => {
         <>
             <Navbar />
             <main >
-                <section id='homesection' >
+                <section className={styles.aboutbackground} >
                     <div style={overlayStyle}></div>
-                    <div className='text' >
-                        <h3 className='texth1'>SINCE 2002</h3>
-                        <h1 className='textp'>WE BUILD THE TRUST</h1>
-                        <p className='p2'>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p>
-                        <div class="slider__btn">
-                            <a class="htc__btn" href="/about">ABOUT US</a>
-                        </div>
+                    <div className={styles.textABOUT} >
+                        {/* <h3 className='texth1'>WHO WE ARE</h3> */}
+                        <h1 className={styles.textpABOUT}>WHO WE ARE</h1>
+                        {/* <p className='p2'>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment</p> */}
+                        {/* <div class="slider__btn">
+                            <a class="htc__btn" href="/about">CONTACT US</a>
+                        </div> */}
                     </div>
                 </section>
 
 
                 <section className={styles.weare}>
-                    <div className={styles.divabouttext}>
-                    <p className={styles.text}>
-                            WHO WE ARE
-                 
-                            <br></br>
-                            <br></br>
-                            The City Rocks Contracting Company, located in Riyadh, is considered one of the establishments engaged in providing and executing contracts for building construction and interior and exterior decoration, as well as maintenance. The company was founded in 2002. Since its inception, the company has specialized in carrying out various tasks, including water networks and tanks, road maintenance, infrastructure, and electrical works.
-                        </p>
+                    <div className={styles.containertext}>
+                        <div className={styles.divabouttext}>
+                            <p className={styles.title}>WHO WE ARE</p>
+                            <p className={styles.text}>
+                                <br></br>
+                                The City Rocks Contracting Company, located in Riyadh, is considered one of the establishments engaged in providing and executing contracts for building construction and interior and exterior decoration, as well as maintenance. The company was founded in 2002. Since its inception, the company has specialized in carrying out various tasks, including water networks and tanks, road maintenance, infrastructure, and electrical works.
+                            </p>
+
+                        </div>
+                        <div></div>
+                        <br></br>
+
+                        <div className={styles.divabouttext} >
+                            <p className={styles.title}>VISION</p>
+
+                            <p className={styles.text}>
+
+
+                                <br></br>
+                                We look forward to expanding into future advanced projects and implementing intelligent ideas by leveraging the latest technology to take our company to a global level in delivering services with the highest quality and professionalism.
+                            </p>
+                        </div>
                     </div>
+
                     <div className={styles.divaboutimg}>
                         <img
                             className={styles.imgabout}
@@ -54,44 +69,76 @@ const About = () => {
 
                 </section>
 
-                <section className={styles.weare} >
-                <div className={styles.divabouttext} >
-                    <p className={styles.text}>
-                             VISION
-                            <br></br>
-                            <br></br>
-                            We look forward to expanding into future advanced projects and implementing intelligent ideas by leveraging the latest technology to take our company to a global level in delivering services with the highest quality and professionalism.
-                        </p>
-                    </div>
-                <div className={styles.divaboutimg} >
-                        <img
-                            className={styles.imgabout}
-                            src="https://images-ext-2.discordapp.net/external/MqyGRCypWwLPNAa_oUTe6tfKrATyyOo6GKQEQZPdROM/%3Fsize%3D626%26ext%3Djpg%26ga%3DGA1.1.1442964426.1687759231%26semt%3Dais/https/img.freepik.com/free-photo/excavator-action_1112-1598.jpg?width=860&height=583"
-                            alt="Image 2"
-                        />
-                    </div>
+
+                <section className="htc__offer__area ptb--150 bg__white">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-xl-4 col-md-6 col-12">
+            <div className="offer">
+              <div className="offer__icon">
+                <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/1.png" alt="icon images" />
+              </div>
+              <div className="offer__details">
+                <h2><a href="#">TOP RATED</a></h2>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-xl-4 col-md-6 col-12 xmt-40">
+            <div className="offer separator">
+              <div className="offer__icon">
+                <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/2.png" alt="icon images" />
+              </div>
+              <div className="offer__details">
+                <h2><a href="#">BEST QUALITY</a></h2>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-xl-4 col-md-6 col-12 smt-40 xmt-40">
+            <div className="offer separator">
+              <div className="offer__icon">
+                <img src="https://htmldemo.net/tm/simply/simply/images/others/icon-2/3.png" alt="icon images" />
+              </div>
+              <div className="offer__details">
+                <h2><a href="#">LOW COST</a></h2>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-                </section>
-                <section className={styles.weare}>
-                    <div className={styles.divabouttext}>
-                    <p className={styles.text}>
-                            MISION
-                 
-                            <br></br>
-                            <br></br>
-                            At City Rocks Company, we have a strong goal of building long-term partnerships with our clients, and we spare no effort to achieve this objective in order to meet the ambitions and needs of both our current and future clients. We are also following an organized plan to expand our operations, aiming to cover our services throughout the entire beloved Kingdom of Saudi Arabia.                        </p>
-                    </div>
-                    <div className={styles.divaboutimg} >
-                        <img
-                            className={styles.imgabout}
-                            src="https://images-ext-2.discordapp.net/external/-2c3-0v0lEScq_R5MTFliYk_qX1DDEsFpQoU5fNTg-0/%3Fw%3D996%26t%3Dst%3D1695242568~exp%3D1695243168~hmac%3Dc4ac7c371a999ecd169310dd81bdc30016a343d995dadee560fc713f2d9f3c9e/https/img.freepik.com/free-photo/excavator-action_1112-1599.jpg?width=1010&height=669"
-                            alt="Image 2"
-                         
-                        />
-                    </div>
 
-                </section>
+                <div className={styles.containerorganization}>
+                    <div className={styles.iconContainer}>
+                        <div class="elementor-widget-container">
+                            <div class="elementor-icon-wrapper">
+                                <div class="elementor-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 21 8" fill="none">
+                                        <path d="M7 0H13L6 8H0L7 0Z" fill="#FCC236"></path>
+                                        <path d="M13 0H7L15 8H21L13 0Z" fill="#FCC236"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p className={styles.title}>ORGANIZATION CHART</p>
+                    <section className={styles.divorganization}>
+                        <div className={styles.centerContent}>
+                            <img
+                                className={styles.imgorganization}
+                                src="/Beige Nude Business Organization Chart .png"
+                                alt="Image 2"
+                            />
+                        </div>
+                    </section>
+                </div>
+
+
+
             </main>
 
             <Footer style={{ flexShrink: 0 }} />
