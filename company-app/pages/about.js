@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '@/components/footer';
-import Navbar from '@/components/header';
+import Navbar from '@/components/headerAbout';
 import styles from '../styles/aboutbage.module.css';
 
 

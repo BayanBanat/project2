@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '@/components/footer';
-import Navbar from '@/components/header';
+import Navbar from '@/components/headerHome';
 import AboutPage from '@/components/services';
 import ClientPage2 from '@/components/services2';
 

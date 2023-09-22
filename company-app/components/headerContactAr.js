@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-
+// import TranslationButton from './TranslationButton';
+// import { translate } from '@/utils/translationService';
 const Navbar = () => {
+  const [isEnglish, setIsEnglish] = useState(true);
+
+  const toggleLanguage = () => {
+    setIsEnglish(!isEnglish);
+  };
+
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('white');
@@ -32,27 +39,33 @@ const Navbar = () => {
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
           <h1 style={{ color: `${textColor}` }} className='text-4xl font-bold'>
-          MRCC
+            MRCC
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
-            <Link href='/'>Home</Link>
+          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+            <Link href='/'>الصفحة الرئيسية</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
-            <Link href='/about'>About</Link>
+          <button onClick={toggleLanguage}>
+            {isEnglish ? 'تبديل إلى الإنجليزية' : 'تبديل إلى العربية'}
+          </button>
+          <Link href={isEnglish ? '/contact' : '/contactAr'}>
+       {isEnglish ? 'العربية' : 'الإنجليزية'}
+          </Link>
+          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+            <Link href='/about'>معلومات عنا</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
-            <Link href='/بروفايل شركة ضخور المدينه للمقاولات.pdf'>Company Profile</Link>
+          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+            <Link href='/بروفايل شركة ضخور المدينه للمقاولات.pdf'>ملف الشركة</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
-            <Link href='/project'>project</Link>
+          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+            <Link href='/project'>المشروعات</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
-            <Link href='/resources'>resources</Link>
+          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+            <Link href='/resources'>المصادر</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
-            <Link href='/contact'>Contact</Link>
+          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+            <Link href='/contact'>اتصل بنا</Link>
           </li>
         </ul>
 
@@ -74,19 +87,19 @@ const Navbar = () => {
         >
           <ul>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/'>Home</Link>
+              <Link href='/'>الصفحة الرئيسية</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-            <Link href='/#about'>About</Link>
+              <Link href='/#about'>معلومات عنا</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-            <Link href='/project'>project</Link>
+              <Link href='/project'>المشروعات</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-            <Link href='/resources'>resources</Link>
+              <Link href='/resources'>المصادر</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/contact'>Contact</Link>
+              <Link href='/contact'>اتصل بنا</Link>
             </li>
           </ul>
         </div>
