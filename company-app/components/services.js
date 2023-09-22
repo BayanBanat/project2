@@ -31,7 +31,7 @@ const teamMembers = [
 
     },
     {
-        name: 'Electrical and lighting works.',
+        name: 'Underground Electrical ,lighting , Telephone , Lines.',
         major: 'Installation and maintenance of electrical systems and lighting solutions.',
         image: 'https://img.freepik.com/free-photo/low-angle-shot-electric-linemen-working-pole_181624-46993.jpg?w=996&t=st=1695228852~exp=1695229452~hmac=77c3f5d36f15df3d04e1369f154e4425ebff95343abedb3bcd65f12d47c88284',
 

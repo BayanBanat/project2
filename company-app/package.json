@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "@mdi/react": "^1.6.1",
     "autoprefixer": "10.4.15",
     "next": "13.4.19",
     "postcss": "8.4.30",

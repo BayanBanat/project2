@@ -26,24 +26,30 @@
   }
 
 .title__line{
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #141414;
     font-variant-ligatures: common-ligatures;
     line-height: 1.2;
     display: block;
 }
 .text__theme{
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #fcc236;
     font-variant-ligatures: common-ligatures;
     line-height: 1.2;
 }
 .text{
     text-align: center!important;
-    /* background-color: #fafafa; */
+   
     display: block;
-    padding: 60px;
+    padding: 0px;
 
+}
+
+@media (min-width: 800px) {
+  .text {
+    padding: 60px;
+  }
 }
 .titlep{
     display: block;

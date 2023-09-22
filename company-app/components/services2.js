@@ -18,7 +18,7 @@ const teamMembers = [
     },
     {
         name: 'The General Directorate of Education - Riyadh Region',
-        image: 'https://th.bing.com/th/id/R.6a102cb7c932affc33b5f193865b7605?rik=B6AXXDP%2fJpw7Kg&riu=http%3a%2f%2funaizh.com%2fuploads%2fgov_dep%2f%d8%a7%d9%84%d8%aa%d8%b1%d8%a8%d9%8a%d9%87.gif&ehk=K4deHz7VShzO%2f7t7DGmW0x2MKsafC6zNobJkLtGtHtU%3d&risl=&pid=ImgRaw&r=0',
+        image: 'https://th.bing.com/th/id/OIP.kbrmUGfM63GLBJeF4a24ugHaEK?pid=ImgDet&rs=1',
 
     },
     {
@@ -41,21 +41,21 @@ const ClientPage2 = () => {
 
 
     return (
-        <div style={{ paddingTop: '40px' }}>
+        <div style={{ paddingTop: '20px',paddingBottom:'30px',backgroundColor:'whitesmoke',paddingLeft:'50px',paddingRight:'50px' }}>
             <div className={styles.text}>
                 <h2 className={styles.title__line}>OUR <span className={styles.text__theme}>CLIENT</span></h2>
                 <p className={styles.titlep}>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire</p>
             </div>
-            <div style={{ padding: '20px',marginTop:'20px' }}>
+            <div style={{ padding: '10px',marginTop:'10px' ,}} className={styles.contain}>
                 <div id='about' className="flex items-center justify-center ">
-                    <div className="grid grid-cols-1 gap-15 lg:grid-cols-5" >
+                    <div className="grid grid-cols-1 gap-2 lg:grid-cols-5" >
                         {teamMembers.map((member, index) => (
                             <div key={index} className="relative items-center justify-center" >
                                 <div className={styles.clientDiv}>
                                     <img className={styles.clientImage} src={member.image} alt={member.name} />
                                 </div>
-                                <div className="absolute m-10 text-center">
-                                    <h1 className={styles.clientText}>{member.name}</h1>
+                                <div className="absolute m-5 text-center">
+                                    {/* <h1 className={styles.clientText}>{member.name}</h1> */}
                                     
 
                                 </div>
