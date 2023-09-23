@@ -25,7 +25,7 @@ const Home = () => {
             <h1 className='textp'>نحن نبني الثقة</h1>
             <p className='p2'>من ناحية أخرى، ندين بالاستياء الصادق ونكره الرجال الذين يتسللون بهوى اللحظة وينحدرون بسحر متعة اللحظة</p>
             <div class="slider__btn">
-              <a class="htc__btn" href="/about">عنا</a>
+              <a class="htc__btn" href="/aboutar">عنا</a>
             </div>
           </div>
         </section>

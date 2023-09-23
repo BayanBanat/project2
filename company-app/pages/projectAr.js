@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "@/components/footer";
-import Navbar from "@/components/headerProject";
+import Footer from "@/components/footerar";
+import Navbar from "@/components/headerProjectAr";
 import styles from "../styles/project.module.css";
 
 const teamMembers = [

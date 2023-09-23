@@ -1,18 +1,21 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Link from 'next/link';
-
+// import TranslationButton from './TranslationButton';
+// import { translate } from '@/utils/translationService';
 const Navbar = () => {
   const [isEnglish, setIsEnglish] = useState(true);
-  const [nav, setNav] = useState(false);
-  const [color, setColor] = useState('transparent');
-  const [textColor, setTextColor] = useState('white');
+
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
 
   const toggleLanguage = () => {
     setIsEnglish(!isEnglish);
     setShowLanguageDropdown(false);
   };
+
+  const [nav, setNav] = useState(false);
+  const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('white');
 
   const handleNav = () => {
     setNav(!nav);
@@ -39,32 +42,27 @@ const Navbar = () => {
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
           <h1 style={{ color: `${textColor}` }} className='text-4xl font-bold'>
-            MRCC
+          MRCC
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/'>Home</Link>
           </li>
 
-          {/* <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
-            <Link href={isEnglish ? '/indexar' : '/index'}>
-              {isEnglish ? 'Arabic' : 'English'}
-            </Link>
-          </li> */}
-          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/about'>About</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/بروفايل شركة ضخور المدينه للمقاولات.pdf'>Company Profile</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/project'>project</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/resources'>resources</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
+          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
             <Link href='/contact'>Contact</Link>
           </li>
           <li className='relative p-4 group' style={{ fontFamily: 'Raleway' }}>
@@ -95,7 +93,7 @@ const Navbar = () => {
                     onClick={toggleLanguage}
                     className='w-full px-4 py-2 text-left hover:bg-gray-200'
                   >
-                     <Link href={isEnglish ? '/indexar' : '/'}>
+                     <Link href={isEnglish ? '/projectAr' : '/project'}>
                     {isEnglish ? 'AR' : 'EN'}
                     </Link>
                   </button>
@@ -104,6 +102,8 @@ const Navbar = () => {
             )}
           </li>
         </ul>
+
+        {/* Mobile Button */}
         <div onClick={handleNav} className='z-10 block sm:hidden'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
@@ -111,6 +111,7 @@ const Navbar = () => {
             <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
           )}
         </div>
+        {/* Mobile Menu */}
         <div
           className={
             nav
@@ -123,13 +124,13 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/#about'>About</Link>
+            <Link href='/about'>About</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/project'>project</Link>
+            <Link href='/project'>project</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/resources'>resources</Link>
+            <Link href='/resources'>resources</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
               <Link href='/contact'>Contact</Link>

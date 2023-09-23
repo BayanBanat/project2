@@ -214,7 +214,7 @@ padding: 80px;
 
 }
 .title__line5::before {
-    background: #e1e1e1 none repeat scroll 0 0;
+    background: #908d8d none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
@@ -238,7 +238,7 @@ padding: 80px;
 .ct__address__icon_i {
     /* border: 1px solid #696969; */
     border-radius: 100%;
-    color: #3e3d3d;
+    color: #FCC236;
     font-size: 10px;
     height: 40px;
     /* line-height: 47px; */

@@ -5,9 +5,13 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 const Navbar = () => {
   const [isEnglish, setIsEnglish] = useState(true);
 
+  const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
+
   const toggleLanguage = () => {
     setIsEnglish(!isEnglish);
+    setShowLanguageDropdown(false);
   };
+
 
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
@@ -45,29 +49,57 @@ const Navbar = () => {
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
             <Link href='/'>الصفحة الرئيسية</Link>
           </li>
-          <li className='p-4 hover:text-orange-300' style={{    fontFamily: 'Raleway'}}>
 
-          <button onClick={toggleLanguage}>
-            {isEnglish ? 'تبديل إلى الإنجليزية' : 'تبديل إلى العربية'}
-          </button>
-          <Link href={isEnglish ? '/indexar' : '/'}>
-            {isEnglish ? 'العربية' : 'الإنجليزية'}
-          </Link>
-          </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
-            <Link href='/about'>معلومات عنا</Link>
+            <Link href='/aboutar'>معلومات عنا</Link>
           </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
             <Link href='/بروفايل شركة ضخور المدينه للمقاولات.pdf'>ملف الشركة</Link>
           </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
-            <Link href='/project'>المشروعات</Link>
+            <Link href='/projectAr'>المشروعات</Link>
           </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
-            <Link href='/resources'>المصادر</Link>
+            <Link href='/resourcesAr'>المصادر</Link>
           </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
-            <Link href='/contact'>اتصل بنا</Link>
+            <Link href='/contactAr'>اتصل بنا</Link>
+          </li>
+          <li className='relative p-4 group' style={{ fontFamily: 'Raleway' }}>
+            <button
+              onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
+              className='cursor-pointer focus:outline-none'
+            >
+              {isEnglish ? 'AR' : 'EN'}
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='w-4 h-4 ml-1'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M19 9l-7 7-7-7'
+                />
+              </svg>
+            </button>
+            {showLanguageDropdown && (
+              <ul className='absolute hidden mt-2 -ml-4 text-black bg-white rounded-md shadow-lg group-hover:block'>
+                <li>
+                  <button
+                    onClick={toggleLanguage}
+                    className='w-full px-4 py-2 text-left hover:bg-gray-200'
+                  >
+                     <Link href={isEnglish ? '/' : '/indexar'}>
+                    {isEnglish ? 'EN' : 'AR'}
+                    </Link>
+                  </button>
+                </li>
+              </ul>
+            )}
           </li>
         </ul>
 
@@ -92,16 +124,16 @@ const Navbar = () => {
               <Link href='/'>الصفحة الرئيسية</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/#about'>معلومات عنا</Link>
+              <Link href='/aboutar'>معلومات عنا</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/project'>المشروعات</Link>
+              <Link href='/projectAr'>المشروعات</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/resources'>المصادر</Link>
+              <Link href='/resourcesAr'>المصادر</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/contact'>اتصل بنا</Link>
+              <Link href='/contactAr'>اتصل بنا</Link>
             </li>
           </ul>
         </div>
