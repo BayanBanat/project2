@@ -5,90 +5,90 @@ import styles from "../styles/project.module.css";
 
 const teamMembers = [
   {
-    name: "الاسم: تصريف الفيضانات ومنع مخاطرها في العيونة والجبيلية.",
+    name: "NAME : The drainage of floods and the prevention of their hazards in Al-Uyunah and Al-Jubailiyah.",
     major:
-      "الموقع: منطقة الحدود الشمالية.",
+      " LOCATION : Northern Borders.",
     image:
-      "https://img.freepik.com/free-photo/beautiful-view-construction-site-city-during-sunset_181624-9347.jpg?size=626&ext=jpg&ga=GA1.2.1442964426.1687759231&semt=ais",
+      "1مشروع.jpg",
   },
   {
-    name: "تنفيذ مشاريع مياه المجموعة 7/3 في منطقة الحدود الشمالية",
+    name: "Implementation of Group 7/3 Water Projects in the Northern Border Region",
     major:
-      "الموقع: أمانة العينة وبلدية الجبيلة.",
+      " LOCATION : Al-Ayina and Al-Jubailah Municipality.",
     image:
-      "https://img.freepik.com/free-photo/road-construction_342744-602.jpg?size=626&ext=jpg&ga=GA1.2.1442964426.1687759231&semt=ais",
+      "/water.jpg",
   },
   {
-    name: "عملية تجديد المدرسة الابتدائية الخامسة والمدرسة الثانوية الثانية في المجمعة",
+    name: "Renovation Process of Fifth Primary School and Second Secondary School in Al-Majma'ah",
     major:
-      "الموقع: محافظة المجمعة.",
+      " LOCATION :Majmaah Governorate.",
     image:
-      "https://img.freepik.com/free-photo/gray-pipe-with-water-coming-out-its-hole_181624-4705.jpg?size=626&ext=jpg&ga=GA1.1.1442964426.1687759231&semt=ais",
+      "https://static.srpcdigital.com/styles/1200x600/public/2022/09/15/1663251404074764900.jpg",
   },
   {
-    name: "عملية بناء المدرسة الابتدائية الأولى في الشعبة",
+    name: "Construction Process of the First Primary School in Al-Shu'bah",
     major:
-      "الموقع: محافظة المجمعة.",
+      " LOCATION :Majmaah Governorate.",
     image:
-      "https://img.freepik.com/free-photo/reforestation-done-by-voluntary-group_23-2149500824.jpg?w=996&t=st=1695228680~exp=1695229280~hmac=ac6303f834ab800b6c53c9895b103c7988d8f6f14c57b7bd8b692ca98ca449fe",
+    "/school2.jpg",
   },
   {
-    name: "تنفيذ خزانات المياه وشبكاتها للمجموعة 9/7 - رقم العقد [1]",
+    name: "Implementation of Water Tanks and Networks for Group 9/7 - Contract Number[1]",
     major:
-      "الموقع: منطقة نجران.",
+      " LOCATION :Najran Region.",
     image:
-      "https://img.freepik.com/free-photo/low-angle-shot-electric-linemen-working-pole_181624-46993.jpg?w=996&t=st=1695228852~exp=1695229452~hmac=77c3f5d36f15df3d04e1369f154e4425ebff95343abedb3bcd65f12d47c88284",
+    "/فيضان.jpg",
   },
   {
-    name: "تنفيذ خزانات المياه وشبكاتها للمجموعة 9/6 - رقم العقد [2]",
+    name: "Execution of Water Tanks and Networks for Group 9/6 - Contract Number [2]",
     major:
-    "الموقع: منطقة نجران.",
+    " LOCATION :Najran Region.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
-  },
+    "/خزان2.jpg",
+    },
   
   {
-    name: "عقد تنفيذ شبكة مياه الدوادمي - رقم العقد [2]",
+    name: "Implementation Contract for Dawadmi Water Network - Contract Number [2]",
     major:
-      "الموقع: محافظة الدوادمي.",
+      "LOCATION : Dawadmi Governorate .",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+    " /دوادمي2.jpg " ,
   },
   {
-    name: "تنفيذ شبكة مياه الدوادمي",
+    name: "Implementation of Dawadmi Water Network",
     major:
-      "الموقع: محافظة الدوادمي.",
+      "LOCATION : Dawadmi Governorate .",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
-  },
+    "/دوادمي1.jpg",
+    },
   {
-    name: "تركيب المأوى لمجموعة 30",
+    name: " Installation of Shelters for Group 30",
     major:
-    "الموقع: مدينة الرياض.",
+    "LOCATION : Riyadh City.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+    "/مضلات.jpg",
   },
 
   {
-    name: "مشاريع مياه للمجموعة 1/5",
+    name: " IWater Projects for Group 1/5",
     major:
-      "الموقع: محافظة الدوادمي.",
+      "LOCATION : Dawadmi Governorate .",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+    "/networkwater.jpg",
+    },
+  {
+    name: "Contract for the Implementation of Water Networks in Wadi Al-Dawasir City",
+    major:
+      "LOCATION : Wadi Al-Dawasir Governorate",
+    image:
+    "/دواسي.jpg",
   },
   {
-    name: "عقد تنفيذ شبكات مياه في مدينة وادي الدواسر",
+    name: "Contract for the Completion of Home Connections and Meters in Cities and Villages in the Jazan Region",
     major:
-      "الموقع: محافظة وادي الدواسر",
+      "LOCATION : Jazan Region",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
-  },
-  {
-    name: "عقد استكمال ربط المنازل وعداداتها في المدن والقرى في منطقة جازان",
-    major:
-      "الموقع: منطقة جازان",
-    image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+      "/jazan.jpg",
   },
 
 
@@ -101,7 +101,7 @@ const Projectpage = () => {
     left: 0,
     width: "100%",
     height: "500px",
-    backgroundColor: "rgba(0, 0, 0, 0.5)", // ضبط الشفافية حسب الحاجة
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity as needed
   };
 
   return (
@@ -112,7 +112,7 @@ const Projectpage = () => {
           <div style={overlayStyle}></div>
           <div className={styles.textABOUT}>
             {/* <h3 className='texth1'>WHO WE ARE</h3> */}
-            <h1 className={styles.textpABOUT}>مشروعاتنا</h1>
+            <h1 className={styles.textpABOUT}>OUR PROJECT</h1>
           </div>
         </section>
 
@@ -135,6 +135,7 @@ const Projectpage = () => {
               </div>
             </div>
           </div>
+          {/* <p className={styles.title}>OVERVIEW</p> */}
         </div>
 
         <div style={{ padding: "50px" }}>

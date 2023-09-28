@@ -9,42 +9,42 @@ const teamMembers = [
     major:
       "الموقع: منطقة الحدود الشمالية.",
     image:
-      "https://img.freepik.com/free-photo/beautiful-view-construction-site-city-during-sunset_181624-9347.jpg?size=626&ext=jpg&ga=GA1.2.1442964426.1687759231&semt=ais",
+      "1مشروع.jpg",
   },
   {
     name: "تنفيذ مشاريع مياه المجموعة 7/3 في منطقة الحدود الشمالية",
     major:
       "الموقع: أمانة العينة وبلدية الجبيلة.",
     image:
-      "https://img.freepik.com/free-photo/road-construction_342744-602.jpg?size=626&ext=jpg&ga=GA1.2.1442964426.1687759231&semt=ais",
+      "/water.jpg",
   },
   {
     name: "عملية تجديد المدرسة الابتدائية الخامسة والمدرسة الثانوية الثانية في المجمعة",
     major:
       "الموقع: محافظة المجمعة.",
     image:
-      "https://img.freepik.com/free-photo/gray-pipe-with-water-coming-out-its-hole_181624-4705.jpg?size=626&ext=jpg&ga=GA1.1.1442964426.1687759231&semt=ais",
+    "https://static.srpcdigital.com/styles/1200x600/public/2022/09/15/1663251404074764900.jpg",
   },
   {
     name: "عملية بناء المدرسة الابتدائية الأولى في الشعبة",
     major:
       "الموقع: محافظة المجمعة.",
     image:
-      "https://img.freepik.com/free-photo/reforestation-done-by-voluntary-group_23-2149500824.jpg?w=996&t=st=1695228680~exp=1695229280~hmac=ac6303f834ab800b6c53c9895b103c7988d8f6f14c57b7bd8b692ca98ca449fe",
+"/school2.jpg",
   },
   {
     name: "تنفيذ خزانات المياه وشبكاتها للمجموعة 9/7 - رقم العقد [1]",
     major:
       "الموقع: منطقة نجران.",
     image:
-      "https://img.freepik.com/free-photo/low-angle-shot-electric-linemen-working-pole_181624-46993.jpg?w=996&t=st=1695228852~exp=1695229452~hmac=77c3f5d36f15df3d04e1369f154e4425ebff95343abedb3bcd65f12d47c88284",
+    "/فيضان.jpg",
   },
   {
     name: "تنفيذ خزانات المياه وشبكاتها للمجموعة 9/6 - رقم العقد [2]",
     major:
     "الموقع: منطقة نجران.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+    "/خزان2.jpg",
   },
   
   {
@@ -52,21 +52,21 @@ const teamMembers = [
     major:
       "الموقع: محافظة الدوادمي.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+   "/دوادمي2.jpg" ,
   },
   {
     name: "تنفيذ شبكة مياه الدوادمي",
     major:
       "الموقع: محافظة الدوادمي.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+      "/دوادمي1.jpg",
   },
   {
     name: "تركيب المأوى لمجموعة 30",
     major:
     "الموقع: مدينة الرياض.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+      "/مضلات.jpg",
   },
 
   {
@@ -74,21 +74,21 @@ const teamMembers = [
     major:
       "الموقع: محافظة الدوادمي.",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+      "/networkwater.jpg",
   },
   {
     name: "عقد تنفيذ شبكات مياه في مدينة وادي الدواسر",
     major:
       "الموقع: محافظة وادي الدواسر",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+      "/دواسي.jpg",
   },
   {
     name: "عقد استكمال ربط المنازل وعداداتها في المدن والقرى في منطقة جازان",
     major:
       "الموقع: منطقة جازان",
     image:
-      "https://img.freepik.com/free-photo/diminishing-perspective-water-canal-near-dock_23-2148139879.jpg?w=360&t=st=1695229441~exp=1695230041~hmac=8732595d93953cfac8a075a654aa6ff2ff349b2be23d48f1a6992a48b8fa51b9",
+    "/jazan.jpg",
   },
 
 

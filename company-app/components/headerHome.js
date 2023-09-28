@@ -62,7 +62,7 @@ const Navbar = () => {
             <Link href='/project'>project</Link>
           </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
-            <Link href='/resources'>resources</Link>
+            <Link href='/Equipments'>resources</Link>
           </li>
           <li className='p-4 hover:text-orange-300' style={{ fontFamily: 'Raleway' }}>
             <Link href='/contact'>Contact</Link>
@@ -129,11 +129,47 @@ const Navbar = () => {
               <Link href='/project'>project</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/resources'>resources</Link>
+              <Link href='/Equipments'>resources</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
               <Link href='/contact'>Contact</Link>
             </li>
+            <li className='relative p-4 group' style={{ fontFamily: 'Raleway' }}>
+            <button
+              onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
+              className='cursor-pointer focus:outline-none'
+            >
+              {isEnglish ? 'EN' : 'AR'}
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='w-4 h-4 ml-1'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M19 9l-7 7-7-7'
+                />
+              </svg>
+            </button>
+            {showLanguageDropdown && (
+              <ul className='absolute hidden mt-2 -ml-4 text-black bg-white rounded-md shadow-lg group-hover:block'>
+                <li>
+                  <button
+                    onClick={toggleLanguage}
+                    className='w-full px-4 py-2 text-left hover:bg-gray-200'
+                  >
+                     <Link href={isEnglish ? '/indexar' : '/'}>
+                    {isEnglish ? 'AR' : 'EN'}
+                    </Link>
+                  </button>
+                </li>
+              </ul>
+            )}
+          </li>
           </ul>
         </div>
       </div>
